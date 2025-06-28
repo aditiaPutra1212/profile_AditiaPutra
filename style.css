@@ -118,7 +118,6 @@ a:hover {
 
 .hero-content {
     animation: fadeInScale 1s ease-out forwards; /* Animasi saat load */
-    display: flex;
 }
 
 .profile-photo {
