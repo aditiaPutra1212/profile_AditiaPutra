@@ -3,27 +3,127 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV Aditia Putra</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+    <title>Portofolio Aditia Putra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+        background: #f8f9fa;
+        color: #333;
+      }
+      .container {
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+        padding: 20px;
+      }
+      .navbar {
+        background: #343a40;
+        padding: 15px 0;
+      }
+      .navbar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbar-brand {
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      .navbar-links li {
+        display: inline-block;
+        margin-left: 20px;
+      }
+      .navbar-links a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      .hero-section {
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1400x400') no-repeat center center/cover;
+        color: white;
+        padding: 60px 0;
+        text-align: center;
+      }
+      .profile-photo {
+        width: 150px;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        margin-bottom: 20px;
+      }
+      .name {
+        font-size: 32px;
+        font-weight: bold;
+      }
+      .tagline {
+        font-size: 18px;
+        margin: 10px 0 20px;
+      }
+      .contact-info a {
+        color: #ffc107;
+        text-decoration: none;
+        margin-left: 5px;
+      }
+      .section {
+        background: white;
+        margin: 30px 0;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      }
+      h2 {
+        color: #2c3e50;
+        border-bottom: 2px solid #ffc107;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+      }
+      .job-item, .edu-item, .org-item {
+        margin-bottom: 20px;
+      }
+      .company, .university, .org-name {
+        color: #6c757d;
+        font-weight: 500;
+      }
+      .skills-category {
+        margin-bottom: 15px;
+      }
+      footer.footer {
+        background: #343a40;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 30px;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      @media (max-width: 768px) {
+        .navbar .container, .hero-content {
+          flex-direction: column;
+        }
+        .navbar-links {
+          margin-top: 15px;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar">
       <div class="container">
         <a href="#" class="navbar-brand">Aditia Putra</a>
-        <div class="navbar-toggle" id="navbarToggle">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="navbar-links" id="navbarLinks">
+        <ul class="navbar-links">
           <li><a href="#about-me">Tentang Saya</a></li>
           <li><a href="#experience">Pengalaman</a></li>
           <li><a href="#education">Pendidikan</a></li>
@@ -36,240 +136,101 @@
 
     <header class="hero-section">
       <div class="container">
-        <div class="hero-content">
-          <img
-            src="img/gambar-saya.jpg"
-            alt="Foto Aditia Putra"
-            class="profile-photo"
-          />
-          <div class="profile-text"> <h1 class="name">Aditia Putra</h1>
-            <p class="tagline">
-              Mahasiswa S1 Informatika dengan Semangat Tinggi dalam Pengembangan
-              IT
-            </p>
-            <div class="contact-info">
-              <p>
-                Bandar Lampung, Lampung, Indonesia |
-                <a href="mailto:aditiaputra88890@gmail.com"
-                  ><i class="fas fa-envelope"></i> aditiaputra88890@gmail.com</a
-                >
-              </p>
-              <p>
-                +62 887 4371 25756 |
-                <a href="https://linkedin.com/in/aditia-putra/" target="_blank"
-                  ><i class="fab fa-linkedin"></i>
-                  linkedin.com/in/aditia-putra/</a
-                >
-                |
-                <a href="https://github.com/aditiaPutra1212" target="_blank"
-                  ><i class="fab fa-github"></i> github.com/aditiaPutra1212</a
-                >
-              </p>
-            </div>
-          </div>
+        <img src="img/gambar-saya.jpg" alt="Foto Aditia Putra" class="profile-photo" />
+        <h1 class="name">Aditia Putra</h1>
+        <p class="tagline">Mahasiswa S1 Informatika dengan Semangat Tinggi dalam Pengembangan IT</p>
+        <div class="contact-info">
+          <p>Bandar Lampung, Indonesia | <a href="mailto:aditiaputra88890@gmail.com"><i class="fas fa-envelope"></i> Email</a> | <a href="https://linkedin.com/in/aditia-putra/"><i class="fab fa-linkedin"></i> LinkedIn</a> | <a href="https://github.com/aditiaPutra1212"><i class="fab fa-github"></i> GitHub</a></p>
         </div>
       </div>
     </header>
 
     <main class="container">
-      <section class="about-me section" id="about-me">
+      <section class="section" id="about-me">
         <h2>Tentang Saya</h2>
-        <p>
-          Saya adalah mahasiswa S1 di
-          <strong>Universitas Teknokrat Indonesia</strong> dengan semangat
-          tinggi dalam bidang pengembangan IT, khususnya desain dan pengembangan
-          web. Saya telah membangun fondasi yang kuat dalam menciptakan solusi
-          desain yang berfokus pada pengguna serta merancang situs web yang
-          menarik dan fungsional.
-        </p>
-        <p>
-          Melalui pengalaman akademis dan proyek freelance, saya terbiasa
-          menggunakan alat-alat standar industri seperti
-          <strong>Visual Studio Code (VSCode)</strong> dalam proses
-          pengembangan. Fokus saya tidak hanya pada aspek estetika, tetapi juga
-          pada optimalisasi pengalaman pengguna dan kelancaran fungsionalitas
-          situs.
-        </p>
-        <p>
-          Saya selalu berupaya menyelaraskan konsep desain dengan tujuan proyek
-          agar menghasilkan situs web yang tidak hanya menarik secara visual,
-          tetapi juga efektif dalam memenuhi kebutuhan pengguna. Selain itu,
-          saya memiliki keahlian dalam berbagai perangkat lunak desain dan
-          produktivitas seperti
-          <strong
-            >CorelDRAW, Adobe Photoshop, Microsoft Excel, Word, dan
-            PowerPoint</strong
-          >.
-        </p>
-        <p>
-          Dengan keterampilan dan wawasan yang saya miliki, saya sangat antusias
-          untuk berkontribusi dalam proyek-proyek dinamis di dunia desain web
-          yang terus berkembang.
-        </p>
+        <p>Saya adalah mahasiswa Informatika di Universitas Teknokrat Indonesia dengan minat besar pada pengembangan web, desain UI/UX, dan teknologi pendidikan. Saya memiliki keterampilan dalam pengembangan situs web menggunakan HTML, CSS, JavaScript, dan berbagai tools desain seperti Canva dan Figma.</p>
       </section>
 
-      <section class="experience section" id="experience">
+      <section class="section" id="experience">
         <h2>Pengalaman</h2>
-
         <div class="job-item">
-          <h3>
-            Web Developer
-            <span class="company">Sinar Sakti, Bandar Lampung</span>
-          </h3>
+          <h3>Web Developer <span class="company">Sinar Sakti</span></h3>
           <p class="date">Juni – Desember 2024</p>
           <ul>
-            <li>
-              Mengembangkan proyek katalog produk menggunakan Bootstrap untuk
-              meningkatkan tampilan dan kemudahan navigasi website perusahaan.
-            </li>
-            <li>
-              Membuat dan mengimplementasikan program kasir untuk mempercepat
-              proses transaksi dan manajemen penjualan di perusahaan percetakan.
-            </li>
-            <li>
-              Berkolaborasi dengan tim untuk memastikan sistem berjalan optimal
-              dan sesuai kebutuhan operasional perusahaan.
-            </li>
+            <li>Mengembangkan katalog produk dan program kasir berbasis web.</li>
+            <li>Meningkatkan pengalaman pengguna menggunakan Bootstrap dan JavaScript.</li>
           </ul>
         </div>
-
         <div class="job-item">
-          <h3>
-            Project Contributor
-            <span class="company">Mahasiswa Kedokteran, Bandar Lampung</span>
-          </h3>
+          <h3>Kontributor Proyek <span class="company">Mahasiswa Kedokteran</span></h3>
           <p class="date">Januari – Juni 2024</p>
           <ul>
-            <li>
-              Berperan dalam pengembangan sistem IoT pendeteksi detak jantung
-              yang datanya ditampilkan secara real-time di website.
-            </li>
-            <li>
-              Mengintegrasikan perangkat keras IoT dengan antarmuka web untuk
-              memonitor data kesehatan secara akurat.
-            </li>
-            <li>
-              Memastikan sistem berjalan stabil dan melakukan troubleshooting
-              terhadap masalah teknis yang muncul selama pengembangan.
-            </li>
+            <li>Pengembangan sistem IoT detak jantung terintegrasi ke web monitoring.</li>
           </ul>
         </div>
       </section>
 
-      <section class="education section" id="education">
+      <section class="section" id="education">
         <h2>Pendidikan</h2>
         <div class="edu-item">
-          <h3>
-            Bachelor of Computer Science (S.Kom.), Informatika
-            <span class="university"
-              >Universitas Teknokrat Indonesia, Bandar Lampung</span
-            >
-          </h3>
-          <p class="date">Juni 2023 – Sekarang</p>
-          <p><strong>GPA: 3.77 of 4.00</strong></p>
+          <h3>S1 Informatika <span class="university">Universitas Teknokrat Indonesia</span></h3>
+          <p class="date">2023 – Sekarang</p>
+          <p><strong>IPK: 3.77 / 4.00</strong></p>
         </div>
       </section>
 
-      <section class="organization section" id="organization">
+      <section class="section" id="organization">
         <h2>Organisasi</h2>
         <div class="org-item">
-          <h3>
-            Vice President (Wakil Ketua)
-            <span class="org-name"
-              >Programming Teknokrat Indonesia (PROTEK), Bandar Lampung</span
-            >
-          </h3>
+          <h3>Wakil Ketua <span class="org-name">PROTEK</span></h3>
           <p class="date">2024 – Sekarang</p>
           <ul>
-            <li>
-              Membantu ketua dalam mengelola dan mengatur setiap divisi di
-              organisasi, memastikan semua kegiatan berjalan lancar dan sesuai
-              dengan tujuan organisasi.
-            </li>
-            <li>
-              Mengawasi kinerja setiap divisi, memastikan pencapaian timeline,
-              serta mengoordinasikan rapat internal antar divisi.
-            </li>
-            <li>
-              Berperan aktif dalam perencanaan dan pelaksanaan berbagai kegiatan
-              organisasi yang mendukung pengembangan keterampilan anggota di
-              bidang programming.
-            </li>
+            <li>Mengelola dan mengatur divisi internal organisasi programming.</li>
           </ul>
         </div>
         <div class="org-item">
-          <h3>
-            Head of Competitive Programming Division (Ketua Divisi Competitive
-            Programming)
-            <span class="org-name"
-              >Programming Teknokrat Indonesia (PROTEK), Bandar Lampung</span
-            >
-          </h3>
+          <h3>Ketua Divisi Competitive Programming <span class="org-name">PROTEK</span></h3>
           <p class="date">2023 – Sekarang</p>
           <ul>
-            <li>
-              Memimpin divisi Competitive Programming, bertanggung jawab atas
-              persiapan dan pelaksanaan berbagai lomba programming tingkat lokal
-              dan nasional.
-            </li>
-            <li>
-              Merancang strategi pelatihan untuk meningkatkan kemampuan anggota
-              dalam menghadapi kompetisi.
-            </li>
+            <li>Menyiapkan dan melatih anggota untuk lomba programming tingkat nasional.</li>
           </ul>
         </div>
       </section>
 
-      <section class="certificates section" id="certificates">
+      <section class="section" id="certificates">
         <h2>Sertifikat</h2>
         <ul>
-          <li>
-            <strong>Dicoding</strong> - Junior Front-end Web Developer (Desember
-            2024)
-          </li>
-          <li>
-            <strong>BPPTIK</strong> - Pemasaran Digital Dengan Kecerdasan Buatan
-            (AI) untuk Wirausaha Digital Entrepreneurship Academy DigitalTalent
-            Scholarship 2025 (Mei 2025)
-          </li>
-          <li>
-            <strong>Pusat Pengembangan Literasi Digital</strong> - Pengantar
-            Mindset Digital 1: Mengubah Masa Depan Anda Dengan Pola Pikir
-            Digital Micro Skill Digital Talent Scholarship 2025 (Mei 2025)
-          </li>
+          <li>Dicoding - Junior Front-End Developer (2024)</li>
+          <li>BPPTIK - Digital Marketing AI (2025)</li>
+          <li>Literasi Digital - Mindset Digital (2025)</li>
         </ul>
       </section>
 
-      <section class="skills section" id="skills">
+      <section class="section" id="certificates">
+        <h2>Prestasi</h2>
+        <ul>
+          <li>Juara 2 divisi Robot Tematik Indonesia Tingkat Wilayah (Online)</li>
+          
+        </ul>
+      </section>
+
+      <section class="section" id="skills">
         <h2>Keahlian</h2>
         <div class="skills-category">
           <h3>Bahasa</h3>
           <p>Bahasa Indonesia, English</p>
         </div>
         <div class="skills-category">
-          <h3>Programming Languages</h3>
-          <p>JavaScript, PHP, Python, C++, C#, HTML, CSS, Bootstrap</p>
+          <h3>Programming</h3>
+          <p>JavaScript, PHP, Python, HTML, CSS, C++, C#, Bootstrap</p>
         </div>
         <div class="skills-category">
-          <h3>Tools & Software</h3>
-          <p>
-            Visual Studio Code, GitHub, Ms. Excel, Ms. Word, Ms. PowerPoint,
-            Figma, Canva, Blender, Unity
-          </p>
+          <h3>Tools</h3>
+          <p>VS Code, GitHub, Figma, Canva, Blender, Unity, Ms. Office</p>
         </div>
         <div class="skills-category">
-          <h3>Core Competencies</h3>
-          <p>
-            Web Development, UI/UX Design, Database Management, IoT Integration,
-            Competitive Programming, Machine Learning
-          </p>
-        </div>
-        <div class="skills-category">
-          <h3>Passionate in</h3>
-          <p>
-            Software Development, Web Design, Competitive Programming,
-            Educational Technology
-          </p>
+          <h3>Fokus</h3>
+          <p>Web Dev, UI/UX, IoT, ML, Competitive Programming</p>
         </div>
       </section>
     </main>
@@ -279,7 +240,5 @@
         <p>&copy; 2025 Aditia Putra. All rights reserved.</p>
       </div>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
